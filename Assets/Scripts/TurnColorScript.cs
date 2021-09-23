@@ -14,6 +14,7 @@ public class TurnColorScript : MonoBehaviour
     void OnEnable()
     {
         EventManager.OnClicked += TurnColor;  // += is operator to subscribe to an event
+    
         SceneManager.sceneLoaded += FadeInOnSceneLoad; 
     }
 
@@ -27,6 +28,7 @@ public class TurnColorScript : MonoBehaviour
     {
         EventManager.OnClicked -= TurnColor;  // -= is the operator to unsubscribe from an event
     }
+
 
 
     void TurnColor()

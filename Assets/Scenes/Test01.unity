@@ -224,13 +224,14 @@ GameObject:
   - component: {fileID: 99618772}
   - component: {fileID: 99618771}
   - component: {fileID: 99618770}
+  - component: {fileID: 99618774}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &99618770
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -307,6 +308,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -21.63, y: -36.17, z: 0}
+--- !u!114 &99618774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99618769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7131e313e6f76054badab120e80469ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &261625104
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,7 +338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &261625105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,7 +715,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 422.69}
+  m_AnchoredPosition: {x: 0, y: 166.64}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &837043743
@@ -748,7 +761,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 837043744}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 99618774}
+        m_TargetAssemblyTypeName: MoveOnClick, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &837043744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,7 +787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5787393, g: 0.9811321, b: 0.41343293, a: 1}
+  m_Color: {r: 0.98039216, g: 0.41176465, b: 0.45321372, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -975,7 +1000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1366507921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1082,7 +1107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1405985247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,6 +1201,7 @@ GameObject:
   - component: {fileID: 1554772150}
   - component: {fileID: 1554772149}
   - component: {fileID: 1554772148}
+  - component: {fileID: 1554772152}
   - component: {fileID: 1554772147}
   m_Layer: 0
   m_Name: Cube (1)
@@ -1272,6 +1298,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -21.63, y: -36.17, z: 0}
+--- !u!114 &1554772152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554772146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7131e313e6f76054badab120e80469ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1708763174
 GameObject:
   m_ObjectHideFlags: 0

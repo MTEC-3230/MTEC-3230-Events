@@ -6,7 +6,12 @@ public class Spawner : MonoBehaviour
 {
     public GameObject prefab;
     public int numPrefabs;
-    public float radius = 10; 
+    public float radius = 10;
+
+    private Transform myTransform; 
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +27,17 @@ public class Spawner : MonoBehaviour
              localRot = Random.insideUnitSphere * 360.0f;
              rotation = Quaternion.Euler(localRot); 
 
-            Instantiate(prefab, position, rotation);
+            GameObject go = Instantiate(prefab, position, rotation);
+            Collider col = go.GetComponent<Collider>(); 
+            if(col !=null)
+            {
+                // do something. 
+            }
+            //col.enabled = true; // could result in a null
+            //reference error. 
 
+            myTransform = this.transform;
+ 
         }
     }
 
