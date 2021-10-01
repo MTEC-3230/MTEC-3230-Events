@@ -1,0 +1,101 @@
+{
+    "name": "New Controls",
+    "maps": [
+        {
+            "name": "UI",
+            "id": "73aed483-671f-4e73-bb70-1df4c397c108",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "85203b91-27d9-4cd3-9a78-2b625c4d0868",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "00c2d1d6-5f03-4fc9-abb0-e2b3967d2e37",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Player",
+            "id": "649f6b83-b0cc-4c4b-8ef2-a4e93fe81c41",
+            "actions": [
+                {
+                    "name": "Fire",
+                    "type": "Button",
+                    "id": "26edda33-4acd-46ca-aaf4-88bd1c1d8014",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "6aeaa8a9-6494-4ca0-ac80-ab73f44115be",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5724dd91-5ca8-4ec3-a738-a1558ec1bb01",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c25942d7-c424-4b98-9a1d-5887261a2cd4",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e2246622-037a-46e6-8210-f22355679781",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard/Mouse",
+            "bindingGroup": "Keyboard/Mouse",
+            "devices": []
+        },
+        {
+            "name": "GamePad",
+            "bindingGroup": "GamePad",
+            "devices": []
+        }
+    ]
+}
